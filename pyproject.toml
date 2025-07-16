@@ -1,0 +1,12 @@
+[project]
+name = "bluefors-prometheus-exporter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "prometheus-client>=0.22.1",
+    "requests>=2.32.4",
+    "pyyaml>=6.0",
+    "pywin32>=308 ; sys_platform == 'win32'",
+]

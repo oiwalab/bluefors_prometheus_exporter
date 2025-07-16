@@ -1,0 +1,23 @@
+# Bluefors Monitor Configuration
+
+# API Configuration
+api:
+  url: "https://your-bluefors-ip:49098"  # Replace with your Bluefors system IP/hostname
+  key: "your-api-key-here"               # Replace with your actual API key
+  cert: "cert.pem"                       # Path to SSL certificate file
+  verify_ssl: true                       # Set to false if using self-signed certs
+
+# Prometheus Configuration
+prometheus:
+  port: 9091                             # Port for Prometheus metrics endpoint
+  bind_address: "0.0.0.0"                # Interface to bind to (0.0.0.0 for all)
+
+# Collection Configuration
+collection:
+  interval: 30                           # Collection interval in seconds
+  timeout: 10                            # API request timeout in seconds
+
+# Logging Configuration
+logging:
+  level: "INFO"                          # Log level: DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
