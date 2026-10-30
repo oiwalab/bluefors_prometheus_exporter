@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "oiwalab-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "oiwalab/agent-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "oiwalab@oiwalab-agent-skills": true
+  }
+}
